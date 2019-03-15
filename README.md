@@ -21,10 +21,13 @@ server will return a JSON formatted object containing
 the requested information.
 
 ## Available Routes
-'/api/updateSum/:sumName'
-'/api/getSumId/:sumName'
-'/api/getSumName/:sumId'
-'/api/getSumName/:sumId'
-'/api/getMasteriesById/:id'
-'/api/champInfo/:champName'
-'/api/champRandom'
+The following routes are accessible through whatever path
+you are hosting the server followed by the route.
+#### /api/updateSum/:sumName
+DOES...
+#### /api/getSumId/:sumName
+#### /api/getSumName/:sumId
+#### /api/getSumName/:sumId
+#### /api/getMasteriesById/:id
+#### /api/champInfo/:champName
+#### /api/champRandom
