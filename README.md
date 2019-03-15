@@ -24,14 +24,14 @@ the requested information.
 The following routes are accessible through whatever path
 you are hosting the server followed by the route.
 #### HOST-URL/api/updateSum/:sumName
-    Replace ':sumName' with a summoners name to force the server to update that summoners basic stats.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace ':sumName' with a summoners name to force the server to update that summoners basic stats.
 #### HOST-URL/api/getSumId/:sumName
-    Replace ':sumName' with a summoners name to get that summoners encrypted account ID.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace ':sumName' with a summoners name to get that summoners encrypted account ID.
 #### HOST-URL/api/getSumName/:sumId
-    Replace ':sumId' with an encrypted account ID to get the accounts summoner name.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace ':sumId' with an encrypted account ID to get the accounts summoner name.
 #### HOST-URL/api/getMasteriesById/:id
-    Replace ':id' with an encrypted account ID to get that summoners champion masteries.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace ':id' with an encrypted account ID to get that summoners champion masteries.
 #### HOST-URL/api/champInfo/:champName
-    Replace ':champName' with the name of a Champions name to get their statistics.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace ':champName' with the name of a Champions name to get their statistics.
 #### HOST-URL/api/champRandom
-    This route returns a random Champion.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This route returns a random Champion.
