@@ -1,0 +1,9 @@
+{
+    "hosting": {
+        "hostname": "127.0.0.1",
+        "port": "8080"
+    },
+    "API_Keys": {
+        "RGAPI": "YOUR API KEY HERE"
+    }
+}
