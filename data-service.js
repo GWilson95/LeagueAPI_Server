@@ -73,18 +73,19 @@ exports.updateSummonerByName = function(name, key){
 // Returns the ID of the summoner, checking locally first and if not found then downloads a recent version of summoner
 exports.getSummonerIdByName = function(name, key) {
     return new Promise((resolve, reject) => {
-        console.log('[ NOTE ] Getting summoners ID by name');
+        console.log('[ NOTE ] Getting summoners ID by name: ' + name);
         // Get value of locally stored summoner and return it if found
         var summId = checkSummonerExistsName_getID(name);
         if (summId != false){
-            console.log('[ NOTE ] Summoner found');
+            console.log('[ NOTE ] Summoner found in local database');
             resolve(summId);
         } else { // Otherwise download summoner and return ID
-            // Construct Riot API url
+            // Construct Riot API url and encode in case of special characters in the name
             var url = API_URLs["summByName"].replace('{summonerName}', name);
             url += '?api_key=' + key;
+            url = encodeURI(url);
 
-            console.log('[ NOTE ] Summoner not found');
+            console.log('[ NOTE ] Summoner not found in local database');
             console.log('[ REQUESTING ] Requesting Riot API for new summoner');
             // Call function to send request to Riot API and return JSON obj
             sendRequest(url).then((summData) => { 
